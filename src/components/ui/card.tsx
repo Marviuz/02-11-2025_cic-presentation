@@ -8,6 +8,7 @@ export const Card: FC<PropsWithChildren<{ active?: boolean }>> = ({
   return (
     <div
       className={cn("border h-full rounded-3xl", active && "ring ring-primary")}
+      id={active ? "active" : undefined}
     >
       <div className="p-6">
         <div className="grid justify-items-center gap-8">{children}</div>

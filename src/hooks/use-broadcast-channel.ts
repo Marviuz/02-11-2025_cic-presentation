@@ -8,7 +8,6 @@ export function useBroadcastChannel() {
     if (typeof window === "undefined") return;
 
     function handleMessage(evt: MessageEvent<number>) {
-      console.log(evt);
       setSlide(evt.data);
     }
 
