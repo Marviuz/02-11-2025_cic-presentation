@@ -4,6 +4,7 @@ import path from "node:path";
 import mdx from "@mdx-js/rollup";
 import rehypeShiki from "@shikijs/rehype";
 import { transformerNotationDiff } from "@shikijs/transformers";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -23,6 +24,7 @@ export default defineConfig({
         ],
       }),
     },
+    TanStackRouterVite({ autoCodeSplitting: true }),
     react(),
   ],
   resolve: {

@@ -1,14 +1,9 @@
 ```js
 // scripts.js
 function handleButtonClick() {
-  // Replace "Hello World" with "Hello CIC"
   document.getElementById("greeting").innerHTML = "Hello CIC";
 }
-
-// Get button element in page 
 var myButton = document.getElementById("myButton");
-
-// Attach the handler function to the button click event
 myButton.addEventListener("click", handleButtonClick);
 ```
 
@@ -17,12 +12,17 @@ myButton.addEventListener("click", handleButtonClick);
 <head>
   <title>Hello World</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="scripts.js"></script> <!-- [!code ++] -->
+  <!-- [!code ++] -->
+  <script src="scripts.js"></script>
 </head>
-<!-- omitted for brevity -->
 <body>
-  <h1 class="content" id="greeting">Hello World</h1> <!-- [!code ++] -->
-  <button id="myButton">Say Hello</button> <!-- [!code ++] -->
+  <!-- [!code --] -->
+  <h1 class="content">Hello World</h1>
+
+  <!-- [!code ++] -->
+  <h1 class="content" id="greeting">Hello World</h1>
+
+  <!-- [!code ++] -->
+  <button id="myButton">Say Hello</button>
 </body>
 ```
-
